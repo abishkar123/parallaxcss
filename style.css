@@ -1,0 +1,155 @@
+body{
+margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+/* nav bar and hero section  */
+
+.top-nav{
+    background: rgba(0, 0, 128, 0.036);
+    position: fixed;
+    width: 100vh;
+
+    
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.menu ul li{
+    margin-left: 1rem;
+}
+.menu ul li:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.hero{
+    background: url(img/img.jpg) no-repeat  center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+
+.hero-content{
+    background: #000;
+    width: 450px;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+
+}
+.round {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(red, yellow);
+    border-radius: 50%;
+    position: relative;
+    left: 51px;
+    top: 94px;
+    z-index: -0;
+
+
+}
+
+
+.img1{
+    background: url(img/img.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.img2{
+    background: url(img/img11.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.img3{
+    background: url(img/img.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+}
+
+
+ 
+
+.title{
+    font-size: 3 rem;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.327);
+    color: white;
+    padding: 2rem 6rem;
+    border-radius: 5px;
+
+}
+
+.down-arrow{
+    font-size: 3rem;
+
+    position: absolute;
+
+    bottom: 50px;
+    color: yellow;
+    transform: rotate(90deg);
+    font-weight: bolder;
+
+    animation: go-down 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+
+}
+
+@keyframes go-down{
+0%{
+    color: yellow;
+    bottom: 100px;
+}
+ 50%{
+    color: red;
+ }
+ 100%{
+    bottom: 50px;
+    color: purple;
+
+ }
+}
